@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background: url("./images/pattern-background-desktop.svg") no-repeat;
+  background-size: 100% auto;
+  background-color: var(--pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+p {
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+  text-align: center;
+  max-width: 28ch;
+  line-height: 26px;
+}
+main {
+  width: 450px;
+  text-align: center;
+  background: white;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 8px 15px -5px hsla(224, 23%, 55%, 0.315);
+}
+article {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+h2 {
+  font-weight: 900;
+}
+section {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--Very-pale-blue);
+}
+a {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+button {
+  width: 100%;
+  background: var(--bright-blue);
+  color: white;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  box-shadow: 0 8px 15px -5px hsla(245, 75%, 52%, 0.603);
+}
+section a {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  margin-right: 0;
+  margin-left: auto;
+}
+b {
+  font-weight: 700;
+}
+span {
+  color: var(--Desaturated-blue);
+}
+button:hover {
+  background: hsl(245, 75%, 62%);
+  box-shadow: 0 8px 15px -5px hsla(244, 33%, 40%, 1);
+  cursor: pointer;
+}
+section a:hover {
+  color: hsl(245, 75%, 62%);
+}
+a:hover {
+  color: hsl(224, 23%, 45%);
+}
+@media (max-width: 1439px) {
+  main {
+    width: 340px;
+  }
+  main > img {
+    width: 340px;
+  }
+
+  section {
+    font-size: 0.94rem;
+  }
+  article {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  body {
+    background: url("./images/pattern-background-mobile.svg") no-repeat;
+    background-size: 100% auto;
+    background-color: var(--pale-blue);
+  }
+}
